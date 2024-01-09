@@ -8,6 +8,7 @@ public class Main {
         try {
             File myFile = new File("./sometext.txt");
             Scanner myScanner = new Scanner(myFile);
+            System.out.println("Scanner Created Sucessfully");
             ScannerPrinter mScannerPrinter = new ScannerPrinter(myScanner, System.out);
             mScannerPrinter.printScanner();
         } catch (FileNotFoundException e) {
