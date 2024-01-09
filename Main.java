@@ -9,6 +9,7 @@ public class Main {
             File myFile = new File("./sometext.txt");
             Scanner myScanner = new Scanner(myFile);
             System.out.println("Scanner Created Sucessfully");
+            printHello();
             ScannerPrinter mScannerPrinter = new ScannerPrinter(myScanner, System.out);
             mScannerPrinter.printScanner();
         } catch (FileNotFoundException e) {
@@ -16,5 +17,9 @@ public class Main {
 			System.out.println("File not created properly");
 			System.exit(1);
         }
+    }
+
+    public static void printHello() {
+        System.out.println("Hello :)");
     }
 }
