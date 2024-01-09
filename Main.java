@@ -16,4 +16,8 @@ public class Main {
 			System.exit(1);
         }
     }
+
+    public static void printHello() {
+        System.out.println("Hello :)");
+    }
 }
